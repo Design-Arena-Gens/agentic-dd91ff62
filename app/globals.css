@@ -1,0 +1,37 @@
+:root {
+  color-scheme: dark;
+  background-color: #04070b;
+  color: #f2f2f2;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: radial-gradient(circle at 20% 20%, rgba(15, 25, 38, 0.6), transparent 60%),
+    radial-gradient(circle at 80% 30%, rgba(10, 17, 29, 0.7), transparent 70%),
+    #030508;
+  font-family: var(--font-body, "Crimson Text", Georgia, serif);
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='90' viewBox='0 0 160 90'%3E%3Cg fill='none' stroke='rgba(255,255,255,0.02)' stroke-width='0.5'%3E%3Cpath d='M0 0h160v90H0z'/%3E%3Cpath d='M0 15h160M0 30h160M0 45h160M0 60h160M0 75h160M0 90h160'/%3E%3Cpath d='M20 0v90M40 0v90M60 0v90M80 0v90M100 0v90M120 0v90M140 0v90'/%3E%3C/g%3E%3C/svg%3E") repeat;
+  opacity: 0.2;
+  mix-blend-mode: screen;
+  pointer-events: none;
+}
+
+html,
+body {
+  width: 100%;
+}
